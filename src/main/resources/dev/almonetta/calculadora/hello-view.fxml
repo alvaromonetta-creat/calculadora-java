@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="253.0" prefWidth="365.0" spacing="20.0" style="-fx-background-color: crimson;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.almonetta.calculadora.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Label text="Numero 1" textFill="#0a0707">
+                  <font>
+                     <Font name="Cooper Black" size="13.0" />
+                  </font></Label>
+               <TextField fx:id="numeroUno" />
+            </children>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets></VBox>
+         <VBox alignment="CENTER" prefHeight="62.0" prefWidth="90.0">
+            <children>
+               <Label text="Numero 2" textFill="#070505">
+                  <font>
+                     <Font name="Cooper Black" size="13.0" />
+                  </font></Label>
+               <TextField fx:id="numeroDos" prefHeight="15.0" prefWidth="33.0" />
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#onSuma" style="-fx-background-color: lightgray;" text="suma" />
+         <Button mnemonicParsing="false" onAction="#onResta" style="-fx-background-color: lightgray;" text="resta" />
+         <Button mnemonicParsing="false" onAction="#onMulti" style="-fx-background-color: lightgray;" text="multiplicacion" />
+         <Button mnemonicParsing="false" onAction="#onDivision" style="-fx-background-color: lightgray;" text="divicion" />
+         <Button mnemonicParsing="false" onAction="#onModulo" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: lightgray;" text="modulo" />
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Label text="resultado" textFill="#000000f7">
+            <font>
+               <Font name="Cooper Black" size="13.0" />
+            </font></Label>
+         <Label fx:id="resultex" />
+      </children>
+   </HBox>
+</VBox>
